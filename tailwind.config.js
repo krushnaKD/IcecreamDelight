@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        title:['Berkshire Swash',"sans"]
+        title:['Berkshire Swash',"sans"],
+        aza:['Aza',"sans"]
       }
     },
   },
