@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 import ExplorSection from "./ExplorSection";
 import FavouriteSection from "./FavouriteSection";
 import Offer from "./Offer";
+import Footer from "./Footer";
 
 const HeroSection = () => {
   return (
@@ -43,6 +44,8 @@ const HeroSection = () => {
       <ExplorSection />
       <FavouriteSection />
       <Offer/>
+      <div className="w-full h-screen"></div>
+      <Footer/>
     </>
   );
 };
