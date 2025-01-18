@@ -60,7 +60,6 @@ const FavouriteSection = () => {
      </div>
  </div>
            <img className="w-[15vw] absolute right-0 top-[24vh]" src={right} alt="" />
-
     </div>
   );
 };

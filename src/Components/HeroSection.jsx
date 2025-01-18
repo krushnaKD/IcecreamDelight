@@ -6,6 +6,7 @@ import "remixicon/fonts/remixicon.css";
 import Navbar from "./Navbar";
 import ExplorSection from "./ExplorSection";
 import FavouriteSection from "./FavouriteSection";
+import Offer from "./Offer";
 
 const HeroSection = () => {
   return (
@@ -41,6 +42,7 @@ const HeroSection = () => {
       </div>
       <ExplorSection />
       <FavouriteSection />
+      <Offer/>
     </>
   );
 };
