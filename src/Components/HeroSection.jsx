@@ -12,7 +12,7 @@ import Footer from "./Footer";
 const HeroSection = () => {
   return (
     <>
-      <div className="w-full h-screen relative bg-gradient-to-br from-[rgba(239,215,239,1)] via-[rgba(245,249,252,1)] via-[rgba(248,234,225,1)] to-[rgba(234,248,249,1)]">
+      <div className="w-full h-screen  relative bg-gradient-to-br from-[rgba(239,215,239,1)] via-[rgba(245,249,252,1)] via-[rgba(248,234,225,1)] to-[rgba(234,248,249,1)]">
         <div className="w-full h-[70px] px-20">
           <Navbar />
         </div>

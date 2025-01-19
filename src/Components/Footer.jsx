@@ -46,7 +46,7 @@ const Footer = () => {
           <div></div>
         </div>
       </div>
-      <h1 className="text-[#c4c3c3] text-md">Copyright © 2025 KD Themes Inc All rights reserved.</h1>
+      <h1 className="text-[#c4c3c3] text-lg">Copyright © 2025 KD Themes Inc All rights reserved.</h1>
       <div className="absolute w-14 h-12 rounded-md right-10 bottom-10 flex items-center justify-center bg-[#F83D8E] hover:bg-blue-400"><i class="text-white text-3xl text-center ri-arrow-up-long-line"></i></div>
     </div>
   );
