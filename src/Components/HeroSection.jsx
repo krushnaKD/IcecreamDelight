@@ -36,7 +36,7 @@ const HeroSection = () => {
             <i className="ml-2 ri-arrow-right-line"></i>{" "}
           </button>
         </div>
-        <div className="w-[40%] absolute left-[58%] top-40">
+        <div className="w-[40%] absolute left-[58%] top-36">
           <img className="w-[30vw]" src={Figure} alt="" />
         </div>
         <img className="absolute bottom-0" src={waves} alt="" />
