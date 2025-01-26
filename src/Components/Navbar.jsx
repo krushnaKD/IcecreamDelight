@@ -12,7 +12,7 @@ const Navbar = () => {
       </div>
       <div className="w-[60%] flex  ">
         <ul className="w-full flex items-center justify-end gap-10 mr-20">
-          <Link to='/HeroSection' className="text-lg ml-5 hover:text-[#F83D8E] cursor-pointer">
+          <Link to='/' className="text-lg ml-5 hover:text-[#F83D8E] cursor-pointer">
             Home
           </Link>
           <li className="text-lg ml-5 hover:text-[#F83D8E] cursor-pointer">

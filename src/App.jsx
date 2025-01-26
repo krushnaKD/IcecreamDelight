@@ -8,10 +8,8 @@ const App = () => {
   return (
     <div className='w-full h-full '>
       <Navbar/>
-      {/* <HeroSection/> */}
-
       <Routes>
-        <Route path='/HeroSection' element={<HeroSection/>}/>
+        <Route path='/' element={<HeroSection/>}/>
         <Route path="/Cart" element={<Cart />} />
       </Routes>
     </div>
