@@ -6,7 +6,6 @@ import img2 from "../assets/favsecImages/image2.png";
 const Cart = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center ">
-      <Navbar />
       <div className="w-full h-[35vh] bg-gradient-to-br from-[rgba(239,215,239,1)] via-[rgba(245,249,252,1)] via-[rgba(248,234,225,1)] to-[rgba(234,248,249,1)] flex  flex-col items-center justify-center gap-3 mb-10">
         <h1 className="font-title text-5xl">Shopping Cart</h1>
         <div className="px-6 py-3  bg-[#ffff] rounded-3xl flex gap-2 cursor-pointer">
@@ -89,7 +88,6 @@ const Cart = () => {
             </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
