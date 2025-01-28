@@ -3,6 +3,8 @@ import HeroSection from './Components/HeroSection'
 import Cart from './Components/Cart'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './Components/Navbar'
+import ProductPage from './Components/ProductPage'
+import Review from './Components/Review'
 
 const App = () => {
   return (
