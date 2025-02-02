@@ -5,6 +5,8 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import ProductPage from './Components/ProductPage'
 import Review from './Components/Review'
+import Menu from './Components/Menu'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -13,7 +15,9 @@ const App = () => {
       <Routes>
         <Route path='/' element={<HeroSection/>}/>
         <Route path="/Cart" element={<Cart />} />
+        <Route path='/Menu' element={<Menu/>} />
       </Routes>
+      <Footer/>
     </div>
   )
 }

@@ -15,9 +15,9 @@ const Navbar = () => {
           <Link to='/' className="text-lg ml-5 hover:text-[#F83D8E] cursor-pointer">
             Home
           </Link>
-          <li className="text-lg ml-5 hover:text-[#F83D8E] cursor-pointer">
+          <Link to='/Menu' className="text-lg ml-5 hover:text-[#F83D8E] cursor-pointer">
             Menu
-          </li>
+          </Link>
           <li className="text-lg ml-5 hover:text-[#F83D8E] cursor-pointer">
             About Us
           </li>
