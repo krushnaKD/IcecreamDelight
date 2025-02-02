@@ -7,11 +7,13 @@ import ProductPage from './Components/ProductPage'
 import Review from './Components/Review'
 import Menu from './Components/Menu'
 import Footer from './Components/Footer'
+import Signupinfo from './RandomPages/Signupinfo'
 
 const App = () => {
   return (
     <div className='w-full h-full '>
       <Navbar/>
+      {/* <Signupinfo/> */}
       <Routes>
         <Route path='/' element={<HeroSection/>}/>
         <Route path="/Cart" element={<Cart />} />
