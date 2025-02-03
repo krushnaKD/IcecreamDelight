@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import img2 from "../assets/favsecImages/image2.png";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
+  const [count, setCount] = useState(1);
   return (
     <div className="w-full h-full flex flex-col justify-center items-center ">
       <div className="w-full h-[35vh] bg-gradient-to-br from-[rgba(239,215,239,1)] via-[rgba(245,249,252,1)] via-[rgba(248,234,225,1)] to-[rgba(234,248,249,1)] flex  flex-col items-center justify-center gap-3 mb-10">
         <h1 className="font-title text-5xl">Shopping Cart</h1>
         <div className="px-6 py-3  bg-[#ffff] rounded-3xl flex gap-2 cursor-pointer">
-          <h2 className="text-lg hover:text-[#F83D8E] ">Home</h2>
+          <Link to='/' className="text-lg hover:text-[#F83D8E] ">Home</Link>
           <span className="text-xl">/</span>
           <h2 className="text-lg hover:text-[#F83D8E] ">Cart</h2>
         </div>
@@ -48,10 +50,23 @@ const Cart = () => {
             </div>
             <div className="w-[25vw]  flex items-center justify-around">
               <h1 className="text-xl font-medium text-[#F83D8E] w-6 ">$4.49</h1>
-              <div className="px-5 py-2 border-2 border-gray-400 bg-transparent rounded-full">
-                -3+
-              </div>
-              <h1 className="text-lg font-medium">13</h1>
+            
+                  <div className="flex items-center space-x-4 border border-gray-400 rounded-full px-2 py-1">
+                    <button
+                      onClick={() => setCount(count - 1)}
+                      className="px-3 py-1 text-xl font-bold text-gray-700 hover:text-red-500 border-r-[1px] border-gray-500"
+                    >
+                      -
+                    </button>
+                    <span className="text-xl font-semibold">{count}</span>
+                    <button
+                      onClick={() => setCount(count + 1)}
+                      className="px-3 py-1 text-xl font-bold text-gray-700 hover:text-green-500 border-l-[1px] border-gray-500"
+                    >
+                      +
+                    </button>
+                </div>
+              <h1 className="text-lg font-medium">${count*4.49}</h1>
               <h1 className="border-[1px] border-[#F83D8E] px-2 py-1 rounded-full">
                 <i class="ri-close-large-line text-[#F83D8E] text-xl font-bold"></i>
               </h1>
@@ -59,33 +74,41 @@ const Cart = () => {
           </div>
         </div>
         <div className="w-[30%] h-[75%] bg-gray-100 rounded-xl shadow-2xl p-2">
-            <h1 className="text-xl font-medium text-center">Order Summary</h1>
-            <div className="w-full h-12 border-t-2 border-b-2 border-gray-300 mt-2 flex justify-around items-center ">
-              <h1 className="text-lg font-medium">Apply Coupons</h1>
-              <button className="px-2 py-1 bg-[#3d195a] text-md text-white rounded-3xl">Apply</button>
+          <h1 className="text-xl font-medium text-center">Order Summary</h1>
+          <div className="w-full h-12 border-t-2 border-b-2 border-gray-300 mt-2 flex justify-around items-center ">
+            <h1 className="text-lg font-medium">Apply Coupons</h1>
+            <button className="px-2 py-1 bg-[#3d195a] text-md text-white rounded-3xl">
+              Apply
+            </button>
+          </div>
+          <div className="h-40 border-b-[1px] border-gray-300 p-2">
+            <h1 className="text-lg font-medium ">Product Details:</h1>
+            <div className="flex justify-between px-5 mt-5">
+              <h3 className="text-md text-gray-400">Sub Total</h3>
+              <h3 className="text-lg font-medium">$63.45</h3>
             </div>
-            <div className="h-40 border-b-[1px] border-gray-300 p-2">
-              <h1 className="text-lg font-medium ">Product Details:</h1>
-              <div className="flex justify-between px-5 mt-5">
-                <h3 className="text-md text-gray-400">Sub Total</h3>
-                <h3 className="text-lg font-medium">$63.45</h3>
-              </div>
-              <div className="flex justify-between px-5 mt-5">
-                <h3 className="text-md text-gray-400">Shipping</h3>
-                <h3 className="text-lg font-medium">$20</h3>
-              </div>
+            <div className="flex justify-between px-5 mt-5">
+              <h3 className="text-md text-gray-400">Shipping</h3>
+              <h3 className="text-lg font-medium">$20</h3>
             </div>
-            <div className="h-24 border-b-[2px] border-gray-300 p-3 flex flex-col justify-center">
-             <div className="flex justify-between">
+          </div>
+          <div className="h-24 border-b-[2px] border-gray-300 p-3 flex flex-col justify-center">
+            <div className="flex justify-between">
               <h1 className="text-lg font-medium">Grand Total</h1>
               <h2 className="text-lg text-[#F83D8E]">$89</h2>
-             </div>
-             <button className="px-14 py-2 text-center bg-[#F83D8E] text-white rounded-3xl mt-3">Procced To Checkout</button>
             </div>
-            <div className="flex gap-2 items-center mt-2 p-2">
+            <button className="px-14 py-2 text-center bg-[#F83D8E] text-white rounded-3xl mt-3">
+              Procced To Checkout
+            </button>
+          </div>
+          <div className="flex gap-2 items-center mt-2 p-2">
             <i className="text-xl ri-shield-flash-line"></i>
-            <h2 className="text-md text-gray-500">Safe and Secure Payments,Easy Returns,<br />100% Authentic Products</h2>
-            </div>
+            <h2 className="text-md text-gray-500">
+              Safe and Secure Payments,Easy Returns,
+              <br />
+              100% Authentic Products
+            </h2>
+          </div>
         </div>
       </div>
     </div>

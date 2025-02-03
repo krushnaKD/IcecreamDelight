@@ -13,7 +13,6 @@ const App = () => {
   return (
     <div className='w-full h-full '>
       <Navbar/>
-      {/* <Signupinfo/> */}
       <Routes>
         <Route path='/' element={<HeroSection/>}/>
         <Route path="/Cart" element={<Cart />} />
